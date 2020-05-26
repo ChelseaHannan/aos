@@ -29,16 +29,38 @@
                 .verify.urlContains(arr.url)
             return this
         },
-        //shop click and verify links
-        clickVerify3: function (arr) {
-            this
-                .useXpath()
-                .click(arr.link)
-                .verify.urlContains(arr.url)
-            return this
-        },
 
+            //shop page side menu categories click and verify links
+            clickVerify3: function (arr) {
+                this
+                    .useXpath()
+                    .click(arr.link)
+                    .verify.urlContains(arr.url)
+                return this
+            },
 
+            //shop page product categories 3 round buttons click and verify links
+            clickVerify4: function (arr) {
+                this
+                    .useXpath()
+                    .click('//*[@id="shopmenu"]/a')
+                    .waitForElementPresent('//*[@id="aspnetForm"]/div[3]/section[2]/div[2]/div/h2', 15000)
+                    .click(arr.link)
+                    .verify.urlContains(arr.url)
+                return this
+            },
+
+            clickVerify5: function (arr) {
+                this
+                    .useXpath()
+                    .click('@news')
+                    .waitForElementPresent('//*[@id="aspnetForm"]/div[5]/section[2]/div/h1', 15000)
+                    .click(arr.link)
+                    .verify.urlContains(arr.url)
+                return this
+            },
+
+        //get location of popout sub-menu in header that is only accessible by hovering over menu links
         hoverMenu: function (browser) {
             browser.getLocation('xpath', '//*[@id="aspnetForm"]/div[4]/header/div/div[4]/ul/li[1]/ul', function(result) {
                 console.log('result', result)
@@ -74,9 +96,9 @@
                 selector: '//*[@id="ctl00_Header_mmOrchidAwardsJudging_hlMainMenuItem"]',
                 locateStrategy: 'xpath'
             },
-
+            
             shop: {
-                selector: '//*[@id="aspnetForm"]/div[4]/header/div/div[4]/ul/li[4]/a',
+                selector: '//*[@id="aspnetForm"]/div[5]/header/div/div[4]/ul/li[4]',
                 locateStrategy: 'xpath'
             },
 
@@ -84,10 +106,11 @@
                 selector: '//*[@id="ctl00_Header_mmNewsEvents_hlMainMenuItem"]',
                 locateStrategy: 'xpath'
             },
- 
 
-
-
+            logo: {
+                selector: '//*[@id="aspnetForm"]/div[5]/header/div/div[1]/a/img',
+                locateStrategy: 'xpath'
+            },
 
         }
     }

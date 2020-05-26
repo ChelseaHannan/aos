@@ -5,27 +5,9 @@
 
   <testsuite name="aosAutomation"
     errors="0" failures="0" hostname="" id="" package="aosAutomation" skipped="0"
-    tests="1" time="74.89" timestamp="">
+    tests="1" time="88.39" timestamp="">
   
-    <testcase name="Header - Orchid Awards &amp; Judging links" classname="aosAutomation" time="74.89" assertions="26">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="Home - Featured Content carousel" classname="aosAutomation" time="88.39" assertions="17">
 
     
 
