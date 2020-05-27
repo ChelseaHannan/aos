@@ -86,6 +86,16 @@
             return this
         },
 
+        //footer menu links - featured content - all about orchids - orchid awards & judging - legal links
+        footer: function (arr) {
+            this
+                .useXpath()
+                .click(arr.link)
+                // .waitForElementPresent('//*[@id="aspnetForm"]/div[5]/footer/div[1]', 100000)
+                .verify.urlContains(arr.url)
+            return this
+        },
+
         //get location of popout sub-menu in header that is only accessible by hovering over menu links
         hoverMenu: function (browser) {
             browser.getLocation('xpath', '//*[@id="aspnetForm"]/div[4]/header/div/div[4]/ul/li[1]/ul', function(result) {

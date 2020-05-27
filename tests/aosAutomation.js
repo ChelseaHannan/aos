@@ -188,6 +188,17 @@ module.exports = {
         })
     },
 
+    'Footer - Featured Content': browser => {
+        let footerArr = require('../testAssets/footerArr')
+
+        footerArr.forEach(i => {
+            aosPage
+                .footer(i)
+        })
+    },
+
+
+
 
 
 }
