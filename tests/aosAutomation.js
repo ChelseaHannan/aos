@@ -164,6 +164,32 @@ module.exports = {
             .verify.urlContains('https://secure.aos.org/orchid-awards.aspx')
     },
 
+    'Home - Orchid Articles section': browser => {
+        let articlesArr = require('../testAssets/articlesArr')
+
+        articlesArr.forEach(i => {
+            aosPage
+                .clickVerify7(i, browser)
+        })
+
+        aosPage
+            .useXpath()
+            .click('//*[@id="ctl00_cphMain_orchidArticles_linkMoreArt"]')
+            .verify.urlContains('https://www.aos.org/blog.aspx')
+            .verify.containsText('//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div/h2', 'Blog')
+    },
+
+    'Home - You May Be Interested In section': browser => {
+        let greenArr = require('../testAssets/greenArr')
+
+        greenArr.forEach(i => {
+            aosPage
+                .clickVerify6(i, browser)
+        })
+    },
+
+
+
 }
 
 
