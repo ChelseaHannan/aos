@@ -3,10 +3,10 @@
         clickVerify: function (arr) {
             this
                 .useXpath()
-                .click('@aboutUs')
-                .waitForElementPresent('//*[@id="aspnetForm"]/div[4]/section/div[1]/div/div[2]/div[1]/div[1]/blockquote', 15000)
                 .click(arr.link)
-                .verify.urlContains(arr.url)
+                .waitForElementPresent('/html/body', 15000)
+                // .verify.urlContains(arr.url)
+                .verify.containsText('/html/body', arr.txt)
             return this
         },
 
@@ -14,25 +14,11 @@
         clickVerify1: function (arr) {
             this
                 .useXpath()
-                .click('@allAbt')
-                .waitForElementPresent('//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[1]/h1', 15000)
                 .click(arr.link)
                 .verify.urlContains(arr.url)
             return this
         },
 
-        //orchid awards and judging click and verify links
-        clickVerify2: function (arr) {
-            this
-                .useXpath()
-                .click('@awards')
-                .waitForElementPresent('//*[@id="aspnetForm"]/div[4]/section[1]/div/h1', 15000)
-                .click(arr.link)
-                .verify.urlContains(arr.url)
-            return this
-        },
-
-        //shop page side menu categories click and verify links
         clickVerify3: function (arr) {
             this
                 .useXpath()
@@ -96,7 +82,69 @@
             return this
         },
 
-        //get location of popout sub-menu in header that is only accessible by hovering over menu links
+        clickVerify8: function (arr) {
+            this
+                .useXpath()
+                .click(arr.link)
+                .verify.containsText('/html/body', arr.txt)
+            return this
+        },
+
+        clickVerify9: function (arr) {
+            this
+                .useXpath()
+                .click(arr.link)
+                .verify.urlContains(arr.url)
+                .verify.containsText('/html/body', arr.txt)
+            return this
+        },
+
+        clickVerify10: function (arr, browser) {
+        let origWin = ''
+        let handle = ''
+
+            browser.windowHandle(result => {
+                origWin = result.value
+            })
+
+            this
+                .useXpath()
+                .click(arr.link)
+
+            browser
+                .windowHandles(function(result) {
+                    handle = result.value[1]
+                    browser.switchWindow(handle)
+                })
+
+            this
+                .verify.urlContains(arr.url)
+
+            browser.closeWindow()
+            browser.switchWindow(origWin)
+
+            return this
+        },
+
+        clickMenu: function (menu, menuItem) {
+            this
+                .useXpath()
+                .click(menu)
+                .click(menuItem)
+            return this
+        },
+
+        //Orchidists Glossary
+        clickVerify11: function (arr) {
+            this
+                .useXpath()
+                .click(arr.link)
+                .verify.containsText('//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[1]/h1', arr.txt)
+            return this
+        },
+
+
+        //get location of popout menu in header that is only accessible by hovering over menu links
         hoverMenu: function (browser) {
             browser.getLocation('xpath', '//*[@id="aspnetForm"]/div[4]/header/div/div[4]/ul/li[1]/ul', function(result) {
                 console.log('result', result)
@@ -152,6 +200,7 @@
                 selector: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div/article/h3',
                 locateStrategy: 'xpath'
             },
+
 
         }
     }

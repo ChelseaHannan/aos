@@ -1,75 +1,70 @@
-//header menu - all about orchids - sub-menu links
+//header menu -> all about orchids links
 module.exports = [
     {
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[1]',
-        url: 'https://www.aos.org/all-about-orchids/beginners-newsletter.aspx'
+        link: '//*[@id="aspnetForm"]/div[5]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[1]/a',
+        url: 'https://www.aos.org/all-about-orchids/beginners-newsletter.aspx',
+        txt: "Starting in June 2009,"
     }, 
     {
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[2]',
-        url: 'https://www.aos.org/orchids/orchid-care.aspx'
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[2]/a',
+        url: 'https://www.aos.org/orchids/orchid-care.aspx',
+        txt: 'Orchid Care'
     },
     {
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[3]',
-        url: 'https://www.aos.org/orchids/seasonal-orchid-care.aspx'
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[3]/a',
+        url: 'https://www.aos.org/orchids/seasonal-orchid-care.aspx',
+        txt: 'Seasonal Orchid Care'
     }, 
     {
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[4]',
-        url: 'https://www.aos.org/orchids/culture-sheets.aspx'
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[4]/a',
+        url: 'https://www.aos.org/orchids/culture-sheets.aspx',
+        txt: 'Culture Sheets'
     },
-    { 
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[5]',
-        url: 'https://www.aos.org/orchids/orchid-pests-diseases.aspx'
-    },
-    { 
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[6]',
-        url: 'https://www.aos.org/orchids/aos-video-library.aspx'
-    }, 
-    {
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[7]',
-        url: 'https://www.aos.org/orchids/orchid-source-directory.aspx'
-    }, 
-    {
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[8]',
-        url: 'https://www.aos.org/orchids/webinars.aspx'
-    }, 
-    {
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[9]',
-        url: 'https://www.aos.org/orchids/orchids-a-to-z.aspx'
-    },
-    {
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[10]',
-        url: 'https://www.aos.org/orchids/collectors-items.aspx'
-    },
-    {
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[11]',
-        url: 'https://www.aos.org/orchids/orchidists-glossary.aspx'
-    }, 
-    { 
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[12]',
-        url: 'https://www.aos.org/orchids/kids-corner.aspx'
-    }, 
-    { 
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[13]',
-        url: 'https://www.aos.org/orchids/orchids-question-answer.aspx'
-    }, 
-    { 
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[14]',
-        url: 'https://www.aos.org/orchids/additional-resources.aspx'
-    },
-    { 
-        link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[15]',
-        url: 'https://www.aos.org/all-about-orchids/photo-of-the-week.aspx'
-    },
-    // The last 2 links are already present in About Us menu. 
     // { 
-    //     link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[16]',
-    //     url: 'https://www.aos.org/about-us/lindleyana-magazine.aspx'
+    //     link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[5]/a',
+    //     url: 'https://www.aos.org/orchids/orchid-pests-diseases.aspx',
+    //     txt: 'Orchid Pests and Diseases'
     // },
+    { 
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[6]/a',
+        url: 'https://www.aos.org/orchids/aos-video-library.aspx',
+        txt: 'AOS Video Library'
+    }, 
+    {
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[9]/a',
+        url: 'https://www.aos.org/orchids/orchids-a-to-z.aspx',
+        txt: 'Orchids A to Z'
+    },
+    {
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[10]/a',
+        url: 'https://www.aos.org/orchids/collectors-items.aspx',
+        txt: "Collector's Items"
+    },
+    {
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[11]/a',
+        url: 'https://www.aos.org/orchids/orchidists-glossary.aspx',
+        txt: "Orchidist's Glossary"
+    }, 
+    { 
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[12]/a',
+        url: 'https://www.aos.org/orchids/kids-corner.aspx',
+        txt: 'Youth Programs'
+    }, 
+    { 
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[13]/a',
+        url: 'https://www.aos.org/orchids/orchids-question-answer.aspx',
+        txt: 'Orchid Question and Answer'
+    }, 
     // { 
-    //     link: '//*[@id="aspnetForm"]/div[4]/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[17]',
-    //     url: 'https://www.aos.org/about-us/orchids-magazine.aspx'
-    // }
-
+    //     link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[14]/a',
+    //     url: 'https://www.aos.org/orchids/additional-resources.aspx',
+    //     txt: 'Additional Orchid Resources'
+    // },
+    { 
+        link: '//*[@id="aspnetForm"]/div[5]/section/div[1]/div/div[2]/div[1]/div[2]/div/div/ul/li[15]/a',
+        url: 'https://www.aos.org/all-about-orchids/photo-of-the-week.aspx',
+        txt: 'Photo of the Week'
+    }
 ]
 
 

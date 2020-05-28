@@ -1,3 +1,4 @@
+//Shop page category links from the side menu
 module.exports = [
     {
         link: '//*[@id="aspnetForm"]/div[3]/section/div[1]/div/div[2]/div/div[2]/div/div/ul/li[2]',

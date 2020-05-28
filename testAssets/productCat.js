@@ -1,3 +1,4 @@
+//Shop -> Product Categories
 module.exports = [
     {
         link: '//*[@id="aspnetForm"]/div[3]/section[2]/div[2]/div/div/div[1]/div/a/img',

@@ -1,3 +1,4 @@
+//Header -> News and Events links
 module.exports = [
     {
         link: '//*[@id="aspnetForm"]/div[5]/section[3]/div[1]/div/div[2]/div/div[2]/div[1]/div/ul/li[1]',

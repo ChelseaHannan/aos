@@ -1,5 +1,5 @@
+//Footer menu
 module.exports = [
-    //Footer menu
     //About Us links
     {
         link: '//*[@id="aspnetForm"]/div[5]/footer/div[1]/div/div[2]/div/div[1]/h4/a',

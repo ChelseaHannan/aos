@@ -5,23 +5,9 @@
 
   <testsuite name="aosAutomation"
     errors="0" failures="0" hostname="" id="" package="aosAutomation" skipped="0"
-    tests="1" time="88.39" timestamp="">
+    tests="1" time="60.02" timestamp="">
   
-    <testcase name="Home - Featured Content carousel" classname="aosAutomation" time="88.39" assertions="17">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="Header - News &amp; Events links" classname="aosAutomation" time="60.02" assertions="10">
 
     
 

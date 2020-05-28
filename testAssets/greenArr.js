@@ -1,4 +1,4 @@
-//home - you may be interested in buttons - section just above footer menu
+//home page - you may be interested in section - just above the footer menu - has a green background with round buttons
 module.exports = [
     {
         link: '//*[@id="aspnetForm"]/div[5]/section[3]/div[6]/div/div/div[1]/a',
