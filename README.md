@@ -1,7 +1,7 @@
-# Automated testing of the American Orchid Society website
-# https://www.aos.org
+## Automated testing of the American Orchid Society website
+## https://www.aos.org
 
-## To run the test scripts install the following packages inside the project folder:
+### To run the test scripts install the following packages inside the project folder:
 1. Install npm
 ``` npm install ```
 
